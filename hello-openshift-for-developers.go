@@ -9,11 +9,11 @@ import (
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	response := os.Getenv("RESPONSE")
 	if len(response) == 0 {
-		response = "Hello OpenShift for Developers!"
+		response = "Hello The0penShift!"
 	}
 
 	fmt.Fprintln(w, response)
-	fmt.Println("Servicing an impatient beginner's request.")
+	fmt.Println("Servicing an experienced beginner's request.")
 }
 
 func listenAndServe(port string) {
